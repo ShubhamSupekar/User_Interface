@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Hello New User</title>
+</head>
+<body>
+<h2>Account Registration</h2><br>
+
+<ul>
+    <li>first name and last name must contain only letters</li>
+    <li>username must longer than 4 char and shorter than 51 char</li>
+    <li>Password must contain a uppercase letter, lowercase letter, number and special character </li>
+    <li> password must be greater than 11 char but less than 60 char</li>
+</ul><br>
+
+<form action="/signupAuth" method="post">
+    <input type="text" name="username" placeholder="username" required><br>
+    <input type="text" name="firstname" placeholder="firstname" required><br>
+    <input type="text" name="lastname" placeholder="lastname" required><br>
+    <input type="password" name="password" placeholder="password" required><br>
+    <input type="submit" value="Submit"><br>
+    </form>
+ <br><br>
+{{if .}}
+    {{.}}
+{{end}}
+   
+
+<div class="text-center p-t-136">
+    <a class="txt2" href="/login">
+        Already Registered ? Login here
+        <i  aria-hidden="true"></i>
+
+</body>
+</html>
